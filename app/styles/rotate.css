@@ -1,0 +1,34 @@
+
+@-webkit-keyframes rotation {
+  from {-webkit-transform: rotate(359deg);}
+  to   {-webkit-transform: rotate(0deg);}
+}
+
+@-webkit-keyframes rotationccw {
+  from {-webkit-transform: rotate(0deg);}
+  to   {-webkit-transform: rotate(359deg);}
+}
+
+#roulette {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#roulette .r_common {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#roulette .r_wheel {
+  z-index: 10;
+  -webkit-animation: rotation 9s infinite linear;
+}
+
+#roulette .r_ball {
+  z-index: 11;
+  -webkit-animation: rotationccw 9s infinite linear;
+}
+
+
