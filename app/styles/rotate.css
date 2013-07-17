@@ -1,12 +1,12 @@
 
-@-webkit-keyframes rotation {
-  from {-webkit-transform: rotate(359deg);}
-  to   {-webkit-transform: rotate(0deg);}
+@keyframes rotation {
+  from {transform: rotate(359deg);}
+  to   {transform: rotate(0deg);}
 }
 
-@-webkit-keyframes rotationccw {
-  from {-webkit-transform: rotate(0deg);}
-  to   {-webkit-transform: rotate(359deg);}
+@keyframes rotationccw {
+  from {transform: rotate(0deg);}
+  to   {transform: rotate(359deg);}
 }
 
 #roulette {
@@ -23,12 +23,12 @@
 
 #roulette .r_wheel {
   z-index: 10;
-  -webkit-animation: rotation 9s infinite linear;
+  animation: rotation 9s infinite linear;
 }
 
 #roulette .r_ball {
   z-index: 11;
-  -webkit-animation: rotationccw 9s infinite linear;
+  animation: rotationccw 9s infinite linear;
 }
 
 
